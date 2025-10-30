@@ -330,8 +330,8 @@ router.get('/:id/history', getLeadByIdValidation, async (req, res, next) => {
         lcm.fecha_cierre
       FROM lead_concesionario_marca lcm
       JOIN concesionario_marca cm ON lcm.concesionario_marca_id = cm.concesionario_marca_id
-      JOIN concesionarios c ON cm.concesionario_id = c.concesionario_id
-      JOIN marcas m ON cm.marca_id = m.marca_id
+      JOIN concesionario c ON cm.concesionario_id = c.concesionario_id
+      JOIN marca m ON cm.marca_id = m.marca_id
       WHERE lcm.lead_id = $1
       ORDER BY lcm.fecha_entrada DESC
     `, [id]);
