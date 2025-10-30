@@ -16,7 +16,9 @@
       "Bash(cat:*)",
       "Bash(node -e:*)",
       "Bash(node check-lcm-columns.js:*)",
-      "Bash(del \"c:\\Users\\Josemi IA\\Documents\\Josemi\\IA_Docs\\Apps\\n8n-lead-sync\\check-lcm-columns.js\")"
+      "Bash(del \"c:\\Users\\Josemi IA\\Documents\\Josemi\\IA_Docs\\Apps\\n8n-lead-sync\\check-lcm-columns.js\")",
+      "Bash(git add:*)",
+      "Bash(git commit:*)"
     ],
     "deny": [],
     "ask": []
