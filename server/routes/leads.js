@@ -121,6 +121,11 @@ router.get('/', queryValidation, async (req, res, next) => {
     const result = await pool.query(query, params);
     console.log('[LEADS] Query executed successfully. Rows:', result.rows.length);
 
+    // Debug: Log first lead structure
+    if (result.rows.length > 0) {
+      console.log('[LEADS] Sample lead structure:', JSON.stringify(result.rows[0], null, 2));
+    }
+
     // Transform data for frontend compatibility
     const leads = result.rows.map(lead => ({
       lead_id: lead.lead_id,
