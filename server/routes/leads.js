@@ -150,6 +150,8 @@ router.get('/', queryValidation, async (req, res, next) => {
       }
     });
   } catch (error) {
+    console.error('[LEADS] ERROR:', error.message);
+    console.error('[LEADS] ERROR Stack:', error.stack);
     next(error);
   }
 });
