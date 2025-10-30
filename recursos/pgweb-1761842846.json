@@ -1,0 +1,182 @@
+[
+ {
+  "column_default": "gen_random_uuid()",
+  "column_name": "lead_concesionario_marca_id",
+  "data_type": "uuid",
+  "is_nullable": "NO"
+ },
+ {
+  "column_default": null,
+  "column_name": "lead_id",
+  "data_type": "uuid",
+  "is_nullable": "NO"
+ },
+ {
+  "column_default": null,
+  "column_name": "concesionario_marca_id",
+  "data_type": "uuid",
+  "is_nullable": "NO"
+ },
+ {
+  "column_default": null,
+  "column_name": "modelo",
+  "data_type": "character varying",
+  "is_nullable": "YES"
+ },
+ {
+  "column_default": null,
+  "column_name": "combustible",
+  "data_type": "character varying",
+  "is_nullable": "YES"
+ },
+ {
+  "column_default": null,
+  "column_name": "transmision",
+  "data_type": "character varying",
+  "is_nullable": "YES"
+ },
+ {
+  "column_default": null,
+  "column_name": "presupuesto_min",
+  "data_type": "numeric",
+  "is_nullable": "YES"
+ },
+ {
+  "column_default": null,
+  "column_name": "presupuesto_max",
+  "data_type": "numeric",
+  "is_nullable": "YES"
+ },
+ {
+  "column_default": null,
+  "column_name": "urgencia",
+  "data_type": "character varying",
+  "is_nullable": "YES"
+ },
+ {
+  "column_default": "'pendiente'::character varying",
+  "column_name": "estado",
+  "data_type": "character varying",
+  "is_nullable": "YES"
+ },
+ {
+  "column_default": null,
+  "column_name": "motivo_perdida",
+  "data_type": "character varying",
+  "is_nullable": "YES"
+ },
+ {
+  "column_default": null,
+  "column_name": "asignado_por",
+  "data_type": "character varying",
+  "is_nullable": "YES"
+ },
+ {
+  "column_default": null,
+  "column_name": "campana",
+  "data_type": "character varying",
+  "is_nullable": "YES"
+ },
+ {
+  "column_default": null,
+  "column_name": "comercial_id",
+  "data_type": "uuid",
+  "is_nullable": "YES"
+ },
+ {
+  "column_default": "now()",
+  "column_name": "fecha_asignacion",
+  "data_type": "timestamp with time zone",
+  "is_nullable": "YES"
+ },
+ {
+  "column_default": null,
+  "column_name": "exclusive_until",
+  "data_type": "timestamp with time zone",
+  "is_nullable": "YES"
+ },
+ {
+  "column_default": null,
+  "column_name": "fecha_cierre",
+  "data_type": "timestamp with time zone",
+  "is_nullable": "YES"
+ },
+ {
+  "column_default": null,
+  "column_name": "next_action_at",
+  "data_type": "timestamp with time zone",
+  "is_nullable": "YES"
+ },
+ {
+  "column_default": null,
+  "column_name": "contact_lock_until",
+  "data_type": "timestamp with time zone",
+  "is_nullable": "YES"
+ },
+ {
+  "column_default": null,
+  "column_name": "notas",
+  "data_type": "text",
+  "is_nullable": "YES"
+ },
+ {
+  "column_default": null,
+  "column_name": "marca",
+  "data_type": "character varying",
+  "is_nullable": "YES"
+ },
+ {
+  "column_default": null,
+  "column_name": "concesionario",
+  "data_type": "character varying",
+  "is_nullable": "YES"
+ },
+ {
+  "column_default": null,
+  "column_name": "fecha_entrada",
+  "data_type": "timestamp without time zone",
+  "is_nullable": "YES"
+ },
+ {
+  "column_default": "3",
+  "column_name": "prioridad",
+  "data_type": "integer",
+  "is_nullable": "YES"
+ },
+ {
+  "column_default": null,
+  "column_name": "combustible_preferido",
+  "data_type": "character varying",
+  "is_nullable": "YES"
+ },
+ {
+  "column_default": null,
+  "column_name": "proxima_accion",
+  "data_type": "text",
+  "is_nullable": "YES"
+ },
+ {
+  "column_default": null,
+  "column_name": "fecha_proxima_accion",
+  "data_type": "timestamp with time zone",
+  "is_nullable": "YES"
+ },
+ {
+  "column_default": null,
+  "column_name": "comercial_nombre",
+  "data_type": "character varying",
+  "is_nullable": "YES"
+ },
+ {
+  "column_default": null,
+  "column_name": "event",
+  "data_type": "character varying",
+  "is_nullable": "YES"
+ },
+ {
+  "column_default": null,
+  "column_name": "source",
+  "data_type": "character varying",
+  "is_nullable": "YES"
+ }
+]

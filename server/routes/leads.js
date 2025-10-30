@@ -14,6 +14,7 @@ const router = express.Router();
  * Get all leads with filters
  */
 router.get('/', queryValidation, async (req, res, next) => {
+  console.log('[LEADS] GET / - Starting request');
   try {
     const {
       limit = 100,
@@ -21,6 +22,7 @@ router.get('/', queryValidation, async (req, res, next) => {
       status,
       search
     } = req.query;
+    console.log('[LEADS] Query params:', { limit, offset, status, search });
 
     let query = `
       SELECT
@@ -115,7 +117,9 @@ router.get('/', queryValidation, async (req, res, next) => {
     `);
     console.log('🔍 Tables visible from this pool:', tableTest.rows.map(r => r.table_name));
 
+    console.log('[LEADS] Executing query...');
     const result = await pool.query(query, params);
+    console.log('[LEADS] Query executed successfully. Rows:', result.rows.length);
 
     // Transform data for frontend compatibility
     const leads = result.rows.map(lead => ({

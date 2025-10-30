@@ -1,0 +1,26 @@
+[
+ {
+  "table_name": "call_logs"
+ },
+ {
+  "table_name": "concesionario"
+ },
+ {
+  "table_name": "concesionario_marca"
+ },
+ {
+  "table_name": "lead_concesionario_marca"
+ },
+ {
+  "table_name": "lead_messages"
+ },
+ {
+  "table_name": "lead_notes"
+ },
+ {
+  "table_name": "leads"
+ },
+ {
+  "table_name": "marca"
+ }
+]
